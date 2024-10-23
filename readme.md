@@ -62,5 +62,5 @@ NoSQL: Products, Reviews, Orders etc.
 * Notification service
 
 
-![diagram-export-10-23-2024-10_27_09-PM](https://hackmd.io/_uploads/B11C-lwekx.png)
+![diagram-export-10-23-2024-10_27_09-PM](https://res.cloudinary.com/dzodph4o8/image/upload/v1729721482/diagram-export-10-23-2024-10_27_09-PM_tdb1pl.png)
 
