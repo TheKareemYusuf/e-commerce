@@ -92,14 +92,14 @@ This project consists of a Next.js frontend and an Express.js/NodeJs backend for
 * Product search 
 * Details view of a single product
 
-### Prerequisites
+### **Prerequisites**
 
 - Node.js (v14 or later)
 - npm or yarn
 
-### Getting Started
+### **Getting Started**
 
-### Backend Setup
+### **Backend Setup**
 
 1. Navigate to the backend directory:
    ```
@@ -114,7 +114,7 @@ This project consists of a Next.js frontend and an Express.js/NodeJs backend for
 3. Create a `.env` file in the backend directory and add the following environment variables:
    ```
    PORT=5000
-   MONGODB_URI=your_mongodb_connection_string
+   DATABASE_URL=your_mongodb_connection_string
    ```
 
 4. Start the backend server:
@@ -148,12 +148,12 @@ This project consists of a Next.js frontend and an Express.js/NodeJs backend for
 
    The frontend application should now be running on `http://localhost:3000`.
 
-## Project Structure
+### Project Structure
 
 - `backend/`: Contains the Express.js backend code
 - `frontend/e-commerce/`: Contains the Next.js frontend code
 
-## Available Scripts
+### Available Scripts
 
 In the frontend directory, you can run:
 
@@ -162,7 +162,7 @@ In the frontend directory, you can run:
 - `npm start`: Runs the built app in production mode
 - `npm run lint`: Runs the linter
 
-## Learn More
+### Learn More
 
 To learn more about the technologies used in this project, check out the following resources:
 
@@ -170,7 +170,9 @@ To learn more about the technologies used in this project, check out the followi
 - [React Documentation](https://reactjs.org/docs)
 - [Express.js Documentation](https://expressjs.com/)
 
-## Deployment
+### Deployment
 
 For deployment instructions, please refer to the documentation of your preferred hosting platform.
+
+### References
 
