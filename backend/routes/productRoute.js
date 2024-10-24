@@ -3,10 +3,11 @@ const productController = require('../controllers/productController')
 
 const router = express.Router();
 
-router.route('/').get(productController.getAllProducts)
+router.route('/product/').get(productController.getAllProducts)
 
-router.route('/:productId').get(productController.getOneProduct)
+router.route('/product/:productId').get(productController.getOneProduct)
 
+router.route('/search').get(productController.searchProducts);
 
 router.route('/seed').get(productController.seedDatabase)
 

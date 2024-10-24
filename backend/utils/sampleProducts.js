@@ -1,24 +1,246 @@
 const sampleProducts = [
     {
-      productName: 'Product A',
-      description: 'Description of Product A',
-      price: 29.99,
-      imageUrl: '/images/productA.jpg',
+        productName: 'iPhone 13',
+        description: 'The iPhone 13 features a 6.1-inch Super Retina XDR display, A15 Bionic chip, dual-camera system, and 5G connectivity, delivering high performance with a sleek design.',
+        price: 799.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
     },
     {
-      productName: 'Product B',
-      description: 'Description of Product B',
-      price: 39.99,
-      imageUrl: '/images/productB.jpg',
+        productName: 'iPhone 13 Pro',
+        description: 'iPhone 13 Pro offers a 6.1-inch Super Retina XDR display with ProMotion, powered by the A15 Bionic chip. Its triple-camera system, LiDAR Scanner, and ProRAW enable professional-level photography and videography.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
     },
     {
-      productName: 'Product C',
-      description: 'Description of Product C',
-      price: 49.99,
-      imageUrl: '/images/productC.jpg',
+        productName: 'iPhone 13 Mini',
+        description: 'The iPhone 13 Mini delivers the same powerful A15 Bionic chip in a smaller 5.4-inch Super Retina XDR display, offering high performance in a more compact design.',
+        price: 699.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
     },
-    // Add more sample products as needed
-  ];
-  
-  module.exports = sampleProducts;
-  
+    {
+        productName: 'iPhone 14',
+        description: 'iPhone 14 boasts a 6.1-inch OLED display, A16 Bionic chip, and enhanced dual-camera system. It offers improved durability, advanced features, and incredible 5G performance.',
+        price: 899.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 14 Plus',
+        description: 'The iPhone 14 Plus comes with a larger 6.7-inch OLED display, offering more screen space, the A16 Bionic chip, and a powerful dual-camera system for an enhanced user experience.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 14 Pro',
+        description: 'iPhone 14 Pro features a 6.1-inch Super Retina XDR display with Always-On functionality and ProMotion. Equipped with the A16 Bionic chip, Dynamic Island, and a 48MP camera, it’s designed for the ultimate pro experience.',
+        price: 1099.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 14 Pro Max',
+        description: 'The iPhone 14 Pro Max offers the same advanced features as the Pro, but with a larger 6.7-inch Super Retina XDR display for an expansive and immersive experience.',
+        price: 1199.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 15',
+        description: 'iPhone 15 introduces a 6.1-inch OLED display, A17 Bionic chip, and a new dual-camera system with enhanced Night Mode and computational photography for stunning visuals.',
+        price: 949.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 15 Plus',
+        description: 'iPhone 15 Plus delivers a larger 6.7-inch OLED display, A17 Bionic chip, and advanced camera features, offering an expansive view and professional-grade performance.',
+        price: 1049.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 15 Pro',
+        description: 'iPhone 15 Pro delivers an advanced 6.1-inch ProMotion display, A17 Bionic chip, Titanium frame, and a 48MP main camera with advanced photography and video features for professionals.',
+        price: 1199.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 15 Pro Max',
+        description: 'The iPhone 15 Pro Max offers a 6.7-inch Super Retina XDR display, A17 Bionic chip, and a professional-grade 48MP camera system with advanced computational photography for exceptional image quality.',
+        price: 1299.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 12',
+        description: 'The iPhone 12 features a 6.1-inch Super Retina XDR display, A14 Bionic chip, and dual-camera system, delivering fast performance and impressive photography at an affordable price.',
+        price: 699.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 12 Pro',
+        description: 'iPhone 12 Pro comes with a 6.1-inch Super Retina XDR display, A14 Bionic chip, and a triple-camera system, offering pro-level photography with advanced Night Mode and Deep Fusion technology.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 12 Mini',
+        description: 'The iPhone 12 Mini packs all the power of the iPhone 12 into a smaller 5.4-inch Super Retina XDR display, providing a more compact yet powerful experience.',
+        price: 599.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone SE (2022)',
+        description: 'iPhone SE (2022) offers a 4.7-inch Retina HD display, A15 Bionic chip, and Touch ID in a classic design. It provides fast performance at an affordable price.',
+        price: 429.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 11',
+        description: 'The iPhone 11 features a 6.1-inch Liquid Retina display, A13 Bionic chip, and dual-camera system, offering great performance and stunning photos at a competitive price.',
+        price: 499.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 11 Pro',
+        description: 'iPhone 11 Pro comes with a 5.8-inch Super Retina XDR display, A13 Bionic chip, and a triple-camera system, offering pro-level photography and performance in a compact form factor.',
+        price: 899.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone 11 Pro Max',
+        description: 'The iPhone 11 Pro Max offers a 6.5-inch Super Retina XDR display, A13 Bionic chip, and a professional triple-camera system for exceptional performance and stunning photography.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone X',
+        description: 'iPhone X features a 5.8-inch Super Retina OLED display, A11 Bionic chip, and Face ID, introducing a revolutionary edge-to-edge design and advanced facial recognition.',
+        price: 499.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'iPhone XR',
+        description: 'iPhone XR offers a 6.1-inch Liquid Retina display, A12 Bionic chip, and a single-camera system, delivering great performance and battery life in a more affordable package.',
+        price: 399.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Samsung Galaxy S22',
+        description: 'The Samsung Galaxy S22 features a 6.1-inch AMOLED display, Exynos 2200 chipset, triple-camera setup, and 5G connectivity. It offers a sleek design with powerful performance.',
+        price: 799.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Samsung Galaxy S22 Ultra',
+        description: 'The Galaxy S22 Ultra boasts a 6.8-inch AMOLED display, Snapdragon 8 Gen 1 chip, and a quad-camera system, including a 108MP main camera for professional-level photography.',
+        price: 1199.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Google Pixel 6',
+        description: 'Google Pixel 6 features a 6.4-inch OLED display, Google’s Tensor chip, and an advanced dual-camera system with software enhancements for amazing photos in any lighting condition.',
+        price: 699.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Google Pixel 6 Pro',
+        description: 'The Pixel 6 Pro comes with a 6.7-inch OLED display, Tensor chip, and a triple-camera system with a telephoto lens. It is optimized for computational photography and seamless Android experience.',
+        price: 899.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Huawei P50 Pro',
+        description: 'Huawei P50 Pro offers a 6.6-inch OLED display, Kirin 9000 chip, and a powerful quad-camera setup. It’s designed for photography enthusiasts with its exceptional camera performance.',
+        price: 1099.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'OnePlus 10 Pro',
+        description: 'The OnePlus 10 Pro features a 6.7-inch Fluid AMOLED display, Snapdragon 8 Gen 1 processor, and a Hasselblad-branded triple-camera system for stunning photos and videos.',
+        price: 899.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Xiaomi Mi 12',
+        description: 'Xiaomi Mi 12 offers a 6.28-inch AMOLED display, Snapdragon 8 Gen 1 processor, and a triple-camera system. It provides a premium smartphone experience at an affordable price.',
+        price: 749.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Oppo Find X5 Pro',
+        description: 'The Oppo Find X5 Pro features a 6.7-inch AMOLED display, Snapdragon 8 Gen 1 chipset, and a 50MP triple-camera system. It delivers a high-end experience with advanced camera features.',
+        price: 1049.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Sony Xperia 1 III',
+        description: 'Sony Xperia 1 III features a 6.5-inch 4K OLED display, Snapdragon 888 chip, and a triple-camera system. It’s designed for creators with professional-level photo and video capabilities.',
+        price: 1199.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Realme GT 2 Pro',
+        description: 'Realme GT 2 Pro offers a 6.7-inch AMOLED display, Snapdragon 8 Gen 1 processor, and a triple-camera system. It provides flagship features at an accessible price point.',
+        price: 749.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Motorola Edge 30 Ultra',
+        description: 'Motorola Edge 30 Ultra features a 6.8-inch AMOLED display, Snapdragon 8+ Gen 1 chip, and a 200MP primary camera. It’s designed for high-end performance and photography.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Vivo X80 Pro',
+        description: 'Vivo X80 Pro comes with a 6.78-inch AMOLED display, Snapdragon 8 Gen 1 chip, and a quad-camera system tuned by Zeiss optics, offering incredible photo and video quality.',
+        price: 999.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Samsung Galaxy Z Flip 4',
+        description: 'The Galaxy Z Flip 4 offers a foldable 6.7-inch AMOLED display, Snapdragon 8+ Gen 1 chip, and a dual-camera system. It’s designed for users seeking a compact, foldable smartphone.',
+        price: 1099.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Samsung Galaxy Z Fold 4',
+        description: 'Samsung Galaxy Z Fold 4 features a 7.6-inch foldable AMOLED display, Snapdragon 8+ Gen 1 processor, and a triple-camera system. It offers a cutting-edge foldable smartphone experience.',
+        price: 1799.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Huawei Mate Xs 2',
+        description: 'Huawei Mate Xs 2 offers a foldable 8-inch OLED display, Snapdragon 888 chip, and a 50MP triple-camera system, providing a premium foldable smartphone experience.',
+        price: 2499.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Asus ROG Phone 6 Pro',
+        description: 'Asus ROG Phone 6 Pro is built for gaming with a 6.78-inch AMOLED display, Snapdragon 8+ Gen 1 chip, and 18GB of RAM. It’s designed to offer an immersive gaming experience.',
+        price: 1099.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Xiaomi Redmi Note 11 Pro+',
+        description: 'Xiaomi Redmi Note 11 Pro+ offers a 6.67-inch AMOLED display, MediaTek Dimensity 920 processor, and a 108MP triple-camera system, delivering powerful performance at an affordable price.',
+        price: 499.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Nokia G50',
+        description: 'The Nokia G50 features a 6.82-inch LCD display, Snapdragon 480 5G chipset, and a 48MP triple-camera system, offering reliable 5G performance and a solid camera at an affordable price.',
+        price: 349.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Realme 9 Pro+',
+        description: 'Realme 9 Pro+ features a 6.4-inch AMOLED display, MediaTek Dimensity 920 chip, and a 50MP main camera with advanced software optimizations for stunning photography.',
+        price: 449.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    },
+    {
+        productName: 'Honor Magic4 Pro',
+        description: 'Honor Magic4 Pro comes with a 6.81-inch AMOLED display, Snapdragon 8 Gen 1 chip, and a quad-camera system. It’s designed for those seeking a high-end smartphone experience.',
+        price: 1049.99,
+        imageUrl: 'https://www.phonemart.ng/wp-content/uploads/2023/04/1.jpg.webp',
+    }
+
+
+];
+
+module.exports = sampleProducts;

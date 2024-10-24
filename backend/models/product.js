@@ -7,6 +7,8 @@ const productSchema = new mongoose.Schema({
   imageUrl: String,
 }, { timestamps: true });
 
+productSchema.index({productName: 'text', description: 'text'})
+
 const Product= mongoose.model('Product', productSchema);
 
 module.exports = Product;

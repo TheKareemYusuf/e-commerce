@@ -62,9 +62,35 @@ const getOneProduct = async (req, res, next) => {
     }
 }
 
+const searchProducts = async (req, res, next) => {
+    try {
+        const query = req.query;
+        const searchQuery = { };
+
+        // Search by text fields
+        if (query.search) {
+            searchQuery.$text = { $search: query.search };
+        }
+
+        const products = await Product.find(searchQuery);
+
+        res.status(200).json({
+            status: "success",
+            message: "Search results retrieved successfully",
+            results: products.length,
+            data: {
+                products
+            }
+        });
+    } catch (error) {
+       next(error) 
+    }
+};
+
 module.exports = {
     seedDatabase,
     getAllProducts,
-    getOneProduct
+    getOneProduct,
+    searchProducts
 }
 
