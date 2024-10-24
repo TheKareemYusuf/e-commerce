@@ -39,7 +39,6 @@ const getAllProducts = async (req, res, next) => {
 const getOneProduct = async (req, res, next) => {
     try {
         
-        console.log(req.params);
         const productId = req.params.productId;
         
 

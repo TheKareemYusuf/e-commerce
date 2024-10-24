@@ -1,3 +1,5 @@
+## **Part 1: Understanding the problem and presenting how to solve it**
+
 ### **Problem statement:** 
 How might we design an e-commerce platform that efficiently manages a large volume of data(products, users and transactions), ensure it is responsive and fast with a secure payment gateway and real-time features like live search and stock updates
 
@@ -81,4 +83,94 @@ Key services include
 
 * Database Replication: The platform will replicate database using primary-replica (also known as master-slave) architecture to improve read performance and ensure data availability.
 
+
+## **Part 2: E-Commerce Project**
+
+This project consists of a Next.js frontend and an Express.js/NodeJs backend for an e-commerce application.
+
+### **Expected Features**
+* Product search 
+* Details view of a single product
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm or yarn
+
+### Getting Started
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Create a `.env` file in the backend directory and add the following environment variables:
+   ```
+   PORT=5000
+   MONGODB_URI=your_mongodb_connection_string
+   ```
+
+4. Start the backend server:
+   ```
+   npm start
+   ```
+
+   The backend server should now be running on `http://localhost:5000`.
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+   ```
+   cd frontend/e-commerce
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Create a `.env.local` file in the frontend directory and add the following environment variable:
+   ```
+   NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api/v1 [for local environment]
+   ```
+
+4. Start the frontend development server:
+   ```
+   npm run dev
+   ```
+
+   The frontend application should now be running on `http://localhost:3000`.
+
+## Project Structure
+
+- `backend/`: Contains the Express.js backend code
+- `frontend/e-commerce/`: Contains the Next.js frontend code
+
+## Available Scripts
+
+In the frontend directory, you can run:
+
+- `npm run dev`: Runs the app in development mode
+- `npm run build`: Builds the app for production
+- `npm start`: Runs the built app in production mode
+- `npm run lint`: Runs the linter
+
+## Learn More
+
+To learn more about the technologies used in this project, check out the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs)
+- [Express.js Documentation](https://expressjs.com/)
+
+## Deployment
+
+For deployment instructions, please refer to the documentation of your preferred hosting platform.
 

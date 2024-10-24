@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 
 export default function SearchResults() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const searchParams = useSearchParams();
   const query = searchParams.get('q');
 
@@ -17,13 +18,20 @@ export default function SearchResults() {
 
   const fetchSearchResults = async () => {
     try {
+      setLoading(true);
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/product/search?search=${encodeURIComponent(query)}`);
       const data = await response.json();
       setProducts(data.data.products);
     } catch (error) {
       console.error('Error fetching search results:', error);
+    } finally {
+      setLoading(false);
     }
   };
+
+  if (loading) {
+    return <div className="text-center mt-8">Loading...</div>;
+  }
 
   return (
     <div className="container mx-auto px-4">
